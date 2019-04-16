@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		BNHA Prompt randomizer</title>
+		<link rel="icon" href="tinylogo.png">
+		<link href="bnha1.css" type="text/css" rel="stylesheet">
+</head>
+<header>
+	<p style="text-align:center;margin:0;">
+		<img src="logo.png" width="25%">
+		</p>
+</header>
+<body link="#230C33" vlink="#230C33" alink="#230C33"></body>
+		<nav>
+					<ul>
+						<li><br>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="index.html">Home</a>
+							</font>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="ghostsofdespair.html">Ghosts of Despair<br>Generator</a><br>
+							</font><br>
+						</li>  
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="undertale.html">Undertale<br>Generator</a><br>
+							</font><br>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="bnha1.html">My Hero Academia<br>Prompt Generator</a><br>
+							</font><br>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="bnhapic.html">My Hero Academia<br>Generator<br>(With Pictures!)</a><br>
+							</font><br>
+						</li><br>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33"><br>
+							<a href="DRChar.html">Danganronpa<br>Generator</a><br>
+							</font>
+							<br>
+						</li>
+					</ul>
+				</nav><br>
+<section>
+		<div align="center">
+		<section style= "width:85%;border-width:3px; border-radius:20px; border-style:solid; border-color:blue;background-color:yellow; padding: 7px">
+	<font size="11" face="Commando" color="red" >
+	<hl><B>my hero academia prompt generator</B></hl></div><br>
+		<div align="center"><br>
+	<section style="width:35%; float:left;border-radius:10px;margin-left:5%; border-width:3px; border-style:solid; border-color:#430909;background-color:#ffa2a2; padding: 5px">
+<hl><font size="7" color= "#831010">Character A</hl></font>
+<br>
+<font size="5" face="Commando" color= "#831010">
+	<div id="characterDisplay">
+		<!-- character will display here -->
+	</div></font>	
+<button style= "background-color:red;color:#430909 ;border-radius:30px;border-color:#430909; width:150px;
+height:40px;" onclick="newcharacter()"><font size="4" face="Commando" >Character A</button></font>
+<br>
+</style>
+</div><br>
+	<div align="center">
+	<section style="width:35%;float:right; border-radius:10px;margin-right: 5%; border-width:3px; border-style:solid; border-color:#7d6608;background-color:yellow; padding: 5px">
+<hl><font size="7"color= "#7d6608">Character B</hl></font>
+<br>
+<font size="5" face="Commando" color= "#7d6608">
+	<div id="personDisplay">
+		<!-- person will display here -->
+	</div></font>
+<button style= "background-color:#f9e79f ;color:#7d6608;border-radius:30px;border-color:#7d6608;width:150px;
+height:40px;"onclick="newperson()"><font size="4" face="Commando" >Character B</button></font>
+<br>
+</div>
+</style>
+</section>
+
+<br>
+<br><br><br>
+
+<section>
+		<div align="center" box-sizing="prompt.width" >
+	<section style= "width: 95%; border-width:3px; border-radius:10px;border-style:solid; border-color:blue ;background-color:#9bbaff; padding: 3px">
+<hl><font size="7" color= "#091a3f">Prompt</hl></font>
+<br>
+<font size="5" face="Commando" color= "#091a3f ">
+	<div id="promptDisplay">
+		<!-- prompt will display here -->
+	</div></font>
+<button style= "display: inline-block ; background-color:#365aab;color:blue;border-radius:30px;border-color:blue ;width:150px;
+height:40px;"onclick="newprompt()"><font size="4" face="Commando" >New Prompt</button></font>
+<br>
+</section>
+</div>
+<br>
+
+	<script>
+		var character = [
+		'All Might',
+		'Present Mic',
+		'Shota Aizawa',
+		'Yuga Aoyama',
+		'Mina Ashido',
+		'Tsuyu Asui',
+		'Tenya Iida',
+		'Ochaco Uraraka',
+		'Mashirao Ojiro',
+		'Denki Kaminari',
+		'Eijiro Kirishima',
+		'Koji Koda',
+		'Rikido Sato',
+		'Mezo Shoji',
+		'Kyoka Jirou',
+		'Hanta Sero',
+		'Fumikage Tokoyami',
+		'Shouto Todoroki',
+		'Toru Hagakure',
+		'Katsuki Bakugo',
+		'Izuku Midoriya',
+		'Mineta',
+		'Momo Yaoyorozu',
+		'Itsuka Kendo',
+		'Neito Monoma',
+		'Tetsutetsu Tetsutetsu',
+		'Ibara Shiozaki',
+		'Mirio Togata',
+		'Nejire Hado',
+		'Tamaki Amajiki',
+		'Hitoshi Shinso',
+		'Mei Hatsume',
+		'Endeavor',
+		'All for One',
+		'Tomura Shigaraki',
+		'Kurogiri',
+		'Dabi',
+		'Himiko Toga',
+		'All for One',
+		'Tomura Shigaraki',
+		'Kurogiri',
+		'Dabi',
+		'Himiko Toga',
+		'Twice',
+		'Mr Compress',
+		'Overhaul'
+		]
+
+		function newcharacter() {
+	var randomNumber = Math.floor(Math.random() * (character.length));
+	document.getElementById('characterDisplay') .innerHTML = character[randomNumber];
+}
+	</script>
+</font>
+</body>
+
+<head>
+	<title>BNHA Character randomizer</title>
+</head>
+<body >
+	<script>
+		var person = [
+		'All Might',
+		'Present Mic',
+		'Shota Aizawa',
+		'Yuga Aoyama',
+		'Mina Ashido',
+		'Tsuyu Asui',
+		'Tenya Iida',
+		'Ochaco Uraraka',
+		'Mashirao Ojiro',
+		'Denki Kaminari',
+		'Eijiro Kirishima',
+		'Koji Koda',
+		'Rikido Sato',
+		'Mezo Shoji',
+		'Kyoka Jirou',
+		'Hanta Sero',
+		'Fumikage Tokoyami',
+		'Shouto Todoroki',
+		'Toru Hagakure',
+		'Katsuki Bakugo',
+		'Izuku Midoriya',
+		'Mineta',
+		'Momo Yaoyorozu',
+		'Itsuka Kendo',
+		'Neito Monoma',
+		'Tetsutetsu Tetsutetsu',
+		'Ibara Shiozaki',
+		'Mirio Togata',
+		'Nejire Hado',
+		'Tamaki Amajiki',
+		'Hitoshi Shinso',
+		'Mei Hatsume',
+		'Endeavor',
+		'All for One',
+		'Tomura Shigaraki',
+		'Kurogiri',
+		'Dabi',
+		'Himiko Toga',
+		'All for One',
+		'Tomura Shigaraki',
+		'Kurogiri',
+		'Dabi',
+		'Himiko Toga',
+		'Twice',
+		'Mr Compress',
+		'Overhaul'
+		]
+
+		function newperson() {
+	var randomNumber = Math.floor(Math.random() * (person.length));
+	document.getElementById('personDisplay') .innerHTML = person[randomNumber];
+}
+	</script>
+</font>
+</body>
+
+<head>
+	<title>BNHA Character randomizer</title>
+</head>
+<body >
+	<script>
+		var prompt = [
+		'A chase scene without cars',
+		'A murder scene',
+		'A scene featuring two characters sitting on the edge of a bridge',
+		'A scene in which someone says goodbye in an airport',
+		'A scene in which you introduce a character in a memorable way',
+		'Person A proposes to Person B in a strange way',
+		'Person A interrogates Person B',
+		'Person A saying goodbye to Person B without telling tehm they wont actually be back',
+		'A fight scene with actual physical violence',
+		'Fighting, without violence',
+		'Answering questions from a child',
+		'Character A leaving a voicemail from character B',
+		'Character A calling 911 and Character B is the opperator',
+		'Fortnite dancing',
+		'Parent teacher conference where one character is the parent and the other is the teacher',
+		'Character A saying grace at a family event with Character Bs family',
+		'Character A confessing to a priest(Character B)',
+		'Stuck in an elevator',
+		'Talking out of a parking ticket',
+		'snow',
+		'Person A dragging Person B to some kinda convention',
+		'a pet goes missing so they gotta find it',
+		'Cant find the stappler',
+		'Character A picking Character B up from the police station',
+		'They get high cause why not',
+		'Person A wants a pet, Person B does not',
+		'Person A breaks into Person Bs house in the middle of the night for no aparent reason',
+		'rat',
+		'Person A is convinced to join Person Bs cult',
+		'Get locked in the mall overnight',
+		'go to ikea',
+		'Complaining about kids these days',
+		'this is so sad, alexa, play despacito',
+		'this soop is too hot damnit',
+		'shrimp chips or prawn crackers',
+		'but i am a real doctor i swear',
+		'sounds fake  but ok',
+		'person a has been stealing coats from person b everyday',
+		'scuse me sir you cant steal all of those shrimp chips',
+		'person a finds person b 6 different email accounts',
+		'character A is only speaking in rhyme and Character B is sick of their shit'
+		]
+
+		function newprompt() {
+	var randomNumber = Math.floor(Math.random() * (prompt.length));
+	document.getElementById('promptDisplay') .innerHTML = prompt[randomNumber];
+}
+</script>
+</font>
+</body>
+</html>
+

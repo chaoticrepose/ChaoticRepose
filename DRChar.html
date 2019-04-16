@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Danganronpa Generator</title>
+		<link rel="icon" href="tinylogo.png">
+		<link href="DRChar.css" type="text/css" rel="stylesheet">
+</head>
+<header>
+	<p style="text-align:center;margin:0;">
+		<img src="logo.png" width="25%">
+		</p>
+</header>
+<body link="#230C33" vlink="#230C33" alink="#230C33"></body>
+		<nav>
+					<ul>
+						<li><br>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="index.html">Home</a>
+							</font>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="ghostsofdespair.html">Ghosts of Despair<br>Generator</a><br>
+							</font><br>
+						</li>  
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="undertale.html">Undertale<br>Generator</a><br>
+							</font><br>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="bnha1.html">My Hero Academia<br>Prompt Generator</a><br>
+							</font><br>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="bnhapic.html">My Hero Academia<br>Generator<br>(With Pictures!)</a><br>
+							</font><br>
+						</li><br>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33"><br>
+							<a href="DRChar.html">Danganronpa<br>Generator</a><br>
+							</font>
+							<br>
+						</li>
+					</ul>
+				</nav><br>
+<section>
+		<div display:inline; align="center">
+		<section style= "width:75%;border-width:3px; border-radius:20px; border-style:solid; border-color:#6EA4BF; border-width: 7; background-color:#ECFEE8; padding: 5px">
+	<font size="11" face="Commando" color="#41337A" >
+	<hl><B>Danganronpa Character Generator</B></hl></div><br>
+		<div align="center"><br>
+	<section style="width:35%; float:left;border-radius:10px;margin-left:10%; border-width:5px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+<hl><font size="7" color= "#41337A">First Character</hl></font>
+<br>
+<font size="5" face="Commando" color= "#230C33">
+	<div id="characterDisplay">
+		<!-- character will display here -->
+	</div></font>	
+
+
+<button style= "background-color:#BCBFF2;color:#320E3B;border-radius:30px; border-width:3px;border-color:#320E3B; width:187.5px;
+height:50px;" onclick="newcharacter()"><font size="5" face="Commando" >New Character</button></font>
+<br>
+</style>
+</div>
+</div>
+<br>
+	<div dispaly:inline; align="center">
+	<section style="width:35%;float:right;border-radius:10px;margin-right: 10%; border-width:5px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+<hl><font size="7"color= "#41337A">Second Character</hl></font>
+<br>
+<font size="5" face="Commando" color= "#230C33">
+	<div id="personDisplay">
+		<!-- person will display here -->
+	</div></font>
+
+<button style= "background-color:#BCBFF2;color:#320E3B;border-radius:30px;border-color:#320E3B;width:187.5px; border-width: 3px;
+height:50px;"onclick="newperson()"><font size="5" face="Commando" >New Character</button></font>
+<br>
+</div>
+</style>
+	<div align="center">
+	<section style="width:35%;float:center; border-radius:10px; border-width:5px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+<hl><font size="7"color= "#41337A">Third Character</hl></font>
+<br>
+
+<font size="5" face="Commando" color= "#230C33">
+	<div id="designDisplay">
+		<!-- design will display here -->
+	</div></font>
+
+<button style= "background-color:#BCBFF2;color:#320E3B;border-radius:30px;border-color:#320E3B;width:187.5px; border-width: 3px;
+height:50px;"onclick="newdesign()"><font size="5" face="Commando" >New Character</button></font>
+<br>
+</div>
+</style>
+
+<br>
+<br>
+<div align="center">
+<button style= "background-color:#ECFEE8;color:#41337A;border-radius:30px;border-color:#6EA4BF;width:50%;border-width: 5px;
+height:50%;"onclick="newperson(newdesign(newcharacter()))"><font size="7" face="Commando" >Randomize All</button></font>
+</div>
+</style>
+<br>
+<div align="center">
+<button style= "background-color:#ECFEE8;color:#41337A;border-radius:30px;border-color:#6EA4BF;width:30%;border-width: 3px;
+height:50%;"onclick="newperson(newcharacter())"><font size="7" face="Commando" >Randomize Two</button></font>
+</div>
+<br>
+</style>
+</section>
+
+<br>
+
+<br>
+<body>
+	<script>
+		var character = [
+		'Yasuhiro Hagakure',
+		'Mukuro Ikusaba',
+		'Junko Enoshima',
+		'Celestia Ludenburg',
+		'Sakura Ogami',
+		'Hifumi Yamada',
+		'Mondo Owada',
+		'Chihiro Fujisaki',
+		'Kiyotaka Ishimaru',
+		'Byakuya Togami',
+		'Toko Fuwaka',
+		'Leon Kuwata',
+		'Sayaka Maizono',
+		'Makoto Naegi',
+		'Kyoko Kirigiri',
+		'Aoi Asahina',
+		'Peko Pekoyama',
+		'Ultimate Imposter',
+		'Akane Owari',
+		'Teruteru Hanamura',
+		'Nagito Komaeda',
+		'Sonia Nevermind',
+		'Fuyuhiko Kuzuryu',
+		'Kazuichi Soda',
+		'Chiaki Nanami',
+		'Mahiru Koizumi',
+		'Hiyoko Saiyonji',
+		'Hajime Hinata',
+		'Izuru Kamakura',
+		'Mikan Tsumiki',
+		'Ibuki Mioda',
+		'Nekomaru Nidai',
+		'Gundham Tanaka',
+		'Korekiyo Shinguji',
+		'Angie Yonaga',
+		'Kirumi Tojo',
+		'Kokichi Ouma',
+		'Tsumugi Shirogane',
+		'K1-B0',
+		'Tenko Chabashira',
+		'Kaede Akamatsu',
+		'Kaito Momota',
+		'Maki Harukawa',
+		'Shuichi Saihara',
+		'Ryoma Hoshi',
+		'Rantaro Amami',
+		'Himiko Yumeno',
+		'Gonta Gokuhara',
+		'Miu Iruma'
+		]
+
+		function newcharacter() {
+	var randomNumber = Math.floor(Math.random() * (character.length));
+	document.getElementById('characterDisplay') .innerHTML = character[randomNumber];
+}
+	</script>
+</font>
+</body>
+
+<body >
+	<script>
+		var person = [
+		'Yasuhiro Hagakure',
+		'Mukuro Ikusaba',
+		'Junko Enoshima',
+		'Celestia Ludenburg',
+		'Sakura Ogami',
+		'Hifumi Yamada',
+		'Mondo Owada',
+		'Chihiro Fujisaki',
+		'Kiyotaka Ishimaru',
+		'Byakuya Togami',
+		'Toko Fuwaka',
+		'Leon Kuwata',
+		'Sayaka Maizono',
+		'Makoto Naegi',
+		'Kyoko Kirigiri',
+		'Aoi Asahina',
+		'Peko Pekoyama',
+		'Ultimate Imposter',
+		'Akane Owari',
+		'Teruteru Hanamura',
+		'Nagito Komaeda',
+		'Sonia Nevermind',
+		'Fuyuhiko Kuzuryu',
+		'Kazuichi Soda',
+		'Chiaki Nanami',
+		'Mahiru Koizumi',
+		'Hiyoko Saiyonji',
+		'Hajime Hinata',
+		'Izuru Kamakura',
+		'Mikan Tsumiki',
+		'Ibuki Mioda',
+		'Nekomaru Nidai',
+		'Gundham Tanaka',
+		'Korekiyo Shinguji',
+		'Angie Yonaga',
+		'Kirumi Tojo',
+		'Kokichi Ouma',
+		'Tsumugi Shirogane',
+		'K1-B0',
+		'Tenko Chabashira',
+		'Kaede Akamatsu',
+		'Kaito Momota',
+		'Maki Harukawa',
+		'Shuichi Saihara',
+		'Ryoma Hoshi',
+		'Rantaro Amami',
+		'Himiko Yumeno',
+		'Gonta Gokuhara',
+		'Miu Iruma'
+		]
+		function newperson() {
+	var randomNumber = Math.floor(Math.random() * (person.length));
+	document.getElementById('personDisplay') .innerHTML = person[randomNumber];
+}
+	</script>
+</font>
+</body>
+
+}
+	</script>
+</font>
+</body>
+
+<body >
+	<script>
+		var design = [
+		'Yasuhiro Hagakure',
+		'Mukuro Ikusaba',
+		'Junko Enoshima',
+		'Celestia Ludenburg',
+		'Sakura Ogami',
+		'Hifumi Yamada',
+		'Mondo Owada',
+		'Chihiro Fujisaki',
+		'Kiyotaka Ishimaru',
+		'Byakuya Togami',
+		'Toko Fuwaka',
+		'Leon Kuwata',
+		'Sayaka Maizono',
+		'Makoto Naegi',
+		'Kyoko Kirigiri',
+		'Aoi Asahina',
+		'Peko Pekoyama',
+		'Ultimate Imposter',
+		'Akane Owari',
+		'Teruteru Hanamura',
+		'Nagito Komaeda',
+		'Sonia Nevermind',
+		'Fuyuhiko Kuzuryu',
+		'Kazuichi Soda',
+		'Chiaki Nanami',
+		'Mahiru Koizumi',
+		'Hiyoko Saiyonji',
+		'Hajime Hinata',
+		'Izuru Kamakura',
+		'Mikan Tsumiki',
+		'Ibuki Mioda',
+		'Nekomaru Nidai',
+		'Gundham Tanaka',
+		'Korekiyo Shinguji',
+		'Angie Yonaga',
+		'Kirumi Tojo',
+		'Kokichi Ouma',
+		'Tsumugi Shirogane',
+		'K1-B0',
+		'Tenko Chabashira',
+		'Kaede Akamatsu',
+		'Kaito Momota',
+		'Maki Harukawa',
+		'Shuichi Saihara',
+		'Ryoma Hoshi',
+		'Rantaro Amami',
+		'Himiko Yumeno',
+		'Gonta Gokuhara',
+		'Miu Iruma'
+		]
+
+		function newdesign() {
+	var randomNumber = Math.floor(Math.random() * (design.length));
+	document.getElementById('designDisplay') .innerHTML = design[randomNumber];
+}
+	</script>
+</font>
+</body>
+
+</html>
+
