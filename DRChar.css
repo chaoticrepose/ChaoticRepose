@@ -54,9 +54,7 @@ html {
   }
 
   section {
-      width: 80%;
-      display: inline-block;
-      float:center;
+      width: 73%;
       /* float: left; */
       /* background-image: url("KOGalaxy.jpg"); */
   }

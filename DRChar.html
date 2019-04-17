@@ -52,54 +52,56 @@
 						</li>
 					</ul>
 				</nav><br>
-<section>
-		<div display:inline; align="center">
-		<section style= "width:75%;border-width:3px; border-radius:20px; border-style:solid; border-color:#6EA4BF; border-width: 7; background-color:#ECFEE8; padding: 5px">
-	<font size="11" face="Commando" color="#41337A" >
-	<hl><B>Danganronpa Character Generator</B></hl></div><br>
-		<div align="center"><br>
-	<section style="width:35%; float:left;border-radius:10px;margin-left:10%; border-width:5px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
-<hl><font size="7" color= "#41337A">First Character</hl></font>
+				<section style="display:inline-block"
 <br>
-<font size="5" face="Commando" color= "#230C33">
+		<div align="center">
+		<section style= "width:85%;float:center; display:inline-block;border-width:3px; border-radius:20px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 7px">
+	<font size="11" face="Commando" color="#2E0854" >
+	<hl><B>Danganronpa Character Generator</B></hl></div>
+	<br>
+		<div align="center">
+	<section style="width:35%; float:left; display:inline-block; border-radius:10px;margin-left:10%; border-width:3px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+<hl><font size="7" color= "#2E0854">First Character</hl></font>
+<br>
+<font size="5" face="Commando" color= "#2E0854">
 	<div id="characterDisplay">
 		<!-- character will display here -->
 	</div></font>	
-
-
-<button style= "background-color:#BCBFF2;color:#320E3B;border-radius:30px; border-width:3px;border-color:#320E3B; width:187.5px;
-height:50px;" onclick="newcharacter()"><font size="5" face="Commando" >New Character</button></font>
+<button style= "background-color:#D7CAEE;color:#320E3B;border-radius:30px;border-color:#230C33; width:150px;
+height:40px;" onclick="newcharacter()"> <font size="4" face="Commando" >New Character</button></font>
 <br>
 </style>
 </div>
-</div>
+	<div align="center">
+	<section style="width:35%;float:right; display:inline-block; border-radius:10px;margin-right: 10%; border-width:3px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+<hl><font size="7"color= "#2E0854">Second Character</hl></font>
 <br>
-	<div dispaly:inline; align="center">
-	<section style="width:35%;float:right;border-radius:10px;margin-right: 10%; border-width:5px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
-<hl><font size="7"color= "#41337A">Second Character</hl></font>
-<br>
-<font size="5" face="Commando" color= "#230C33">
+<font size="5" face="Commando" color= "#2E0854">
 	<div id="personDisplay">
 		<!-- person will display here -->
 	</div></font>
+<button style= "background-color:#D7CAEE;color:#320E3B;border-radius:30px;border-color:#230C33;width:150px;
+height:40px;"onclick="newperson()"><font size="4" face="Commando" >New Character</button></font>
 
-<button style= "background-color:#BCBFF2;color:#320E3B;border-radius:30px;border-color:#320E3B;width:187.5px; border-width: 3px;
-height:50px;"onclick="newperson()"><font size="5" face="Commando" >New Character</button></font>
 <br>
 </div>
 </style>
+</section>
+<br>
+<br>
+<section style="display:inline-block">
 	<div align="center">
-	<section style="width:35%;float:center; border-radius:10px; border-width:5px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
-<hl><font size="7"color= "#41337A">Third Character</hl></font>
+			<section style= "width:35%;border-width:3px; border-radius:10px; border-style:solid; border-color:#6EA4BF; background-color:#ECFEE8; padding: 5px">
+<hl><font size="7" color="#2E0854">Third Character</hl></font>
 <br>
 
-<font size="5" face="Commando" color= "#230C33">
+<font size="5" face="Commando" color= "#2E0854">
 	<div id="designDisplay">
 		<!-- design will display here -->
 	</div></font>
 
-<button style= "background-color:#BCBFF2;color:#320E3B;border-radius:30px;border-color:#320E3B;width:187.5px; border-width: 3px;
-height:50px;"onclick="newdesign()"><font size="5" face="Commando" >New Character</button></font>
+	<button style= "background-color:#D7CAEE;color:#320C33;border-radius:30px;border-color:#230C33;width:150px;
+	height:40px;"onclick="newperson()"><font size="4" face="Commando" >New Character</button></font>
 <br>
 </div>
 </style>
@@ -107,16 +109,17 @@ height:50px;"onclick="newdesign()"><font size="5" face="Commando" >New Character
 <br>
 <br>
 <div align="center">
-<button style= "background-color:#ECFEE8;color:#41337A;border-radius:30px;border-color:#6EA4BF;width:50%;border-width: 5px;
+<button style= "padding:15px;background-color:#ECFEE8;color:#2E0854;border-radius:30px;border-color:#6EA4BF;width:40%;border-width: 5px;
 height:50%;"onclick="newperson(newdesign(newcharacter()))"><font size="7" face="Commando" >Randomize All</button></font>
 </div>
 </style>
 <br>
 <div align="center">
-<button style= "background-color:#ECFEE8;color:#41337A;border-radius:30px;border-color:#6EA4BF;width:30%;border-width: 3px;
+<button style= "padding:15px;background-color:#ECFEE8;color:#2E0854;border-radius:30px;border-color:#6EA4BF;width:40%;border-width: 3px;
 height:50%;"onclick="newperson(newcharacter())"><font size="7" face="Commando" >Randomize Two</button></font>
 </div>
 <br>
+
 </style>
 </section>
 
