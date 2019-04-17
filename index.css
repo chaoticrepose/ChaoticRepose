@@ -56,7 +56,7 @@ html {
 
   section {
       width: 73%;
-      padding: 15px;
+      padding:0;
       float:center;
   }
   p{
