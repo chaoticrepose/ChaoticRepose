@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Character Generator</title>
+		<link rel="icon" href="tinylogo.png">
+		<link href="char.css" type="text/css" rel="stylesheet">
+</head>
+<header>
+	<p style="text-align:center;margin:0;">
+		<img src="logo.png" width="25%">
+		</p>
+</header>
+<body link="#230C33" vlink="#230C33" alink="#230C33"></body>
+		<nav>
+					<ul>
+						<li><br>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="index.html">Home</a>
+							</font>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="ghostsofdespair.html">Ghosts of Despair<br>Generator</a><br>
+							</font><br>
+						</li>  
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="undertale.html">Undertale<br>Generator</a><br>
+							</font><br>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="bnha1.html">My Hero Academia<br>Prompt Generator</a><br>
+							</font><br>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="bnhapic.html">My Hero Academia<br>Generator<br>(With Pictures!)</a><br>
+							</font><br>
+						</li><br>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33"><br>
+							<a href="DRChar.html">Danganronpa<br>Generator</a><br>
+							</font>
+							<br>
+						</li>
+						<br>
+						<li>
+							<font size="5px" face="commando" color="#230C33">
+							<a href="char.html">Character<br>Generator</a><br>
+							</font><br>
+						</li>
+						<br>
+					</ul>
+				</nav><br>
+				<section style="display:inline-block">
+<br>
+		<div align="center">
+		<section style= "width:85%;float:center; display:inline-block;border-width:3px; border-radius:20px; margin-left:10%; margin-right:10%;border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 7px">
+	<font size="11" face="Commando" color="#2E0854" >
+	<hl><B>Character Generator</B></hl></div>
+	<br>
+<section style= "width:85%;float:center; display:inline-block; margin-left:10%; margin-right:10%; padding: 7px">
+		<div align="center">
+		<section style="width:25%; float:left; display:inline-block; border-radius:10px; margin-left:5%; margin-bottom:10%; border-width:3px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+		<hl><font size="7" color= "#2E0854">Body</hl></font>
+		<br>
+		<font size="5" face="Commando" color= "#352548">
+			Gender
+			<font size="4" face="Commando" color="#624B7D"><div id="genderDisplay"></div></font>
+			Nationality
+			<font size="4" face="Commando" color="#624B7D"><div id="nationDisplay"></div></font>
+		Skin Tone
+				<font size="4" face="Commando" color="#624B7D"><div id="skcDisplay"></div></font>
+		Height
+				<font size="4" face="Commando" color="#624B7D"><div id="heightDisplay"></div></font>
+				Build
+				<font size="4" face="Commando" color="#624B7D"><div id="buildDisplay"></div></font>
+			</font>	
+		<button style= "background-color:#D7CAEE;color:#320E3B;border-radius:30px;border-color:#230C33; width:150px;
+		height:40px;" onclick="newgender(newnation(newskc(newheight(newbuild()))))"> <font size="4" face="Commando" >Randomize</button></font>
+		<br>
+		<font size="2" face="Commando" color="#624B7D">Skin tone based on the Fitzpatrick Scale.</font>
+		</style>
+		</div>
+		</style>
+		<div align="center">
+		<section style="width:25%; float:left; display:inline-block; border-radius:10px; margin-left:5%; margin-bottom:10%; border-width:3px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+		<hl><font size="7" color= "#2E0854">Details</hl></font>
+		<br>
+		<font size="5" face="Commando" color="#352548">
+		Hair Length
+				<font size="4" face="Commando" color="#624B7D"><div id="hlegDisplay"></div></font>
+		Hair Texture
+				<font size="4" face="Commando" color="#624B7D"><div id="htexDisplay"></div></font>
+		Hair Color
+				<font size="4" face="Commando" color="#624B7D"><div id="hcolDisplay"></div></font>
+		Eye Color
+				<font size="4" face="Commando" color="#624B7D"><div id="eyecolDisplay"></div></font>
+		Zodiac Sign
+				<font size="4" face="Commando" color="#624B7D"><div id="signDisplay"></div></font>
+		Personality
+				<font size="4" face="Commando" color="#624B7D"><div id="persDisplay"></div></font>
+		Power
+				<font size="4" face="Commando" color="#624B7D"><div id="powerDisplay"></div></font>
+				<!-- character will display here -->
+			</font>	
+		<button style= "background-color:#D7CAEE;color:#320E3B;border-radius:30px;border-color:#230C33; width:150px;
+		height:40px;" onclick="newhleg(newhtex(newhcol(neweyecol(newsign(newpers(newpower()))))))"> <font size="4" face="Commando" >Randomize</button></font>
+		<br>
+		</style>
+		</div>
+		</style>
+		
+		<font size="5" face="Commando" color= "#2EO854">
+		<div align="center">
+			<section style="width:25%; float:right; display:inline-block; border-radius:10px;margin-right: 5%;margin-bottom:5%; border-width:3px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+		<hl><font size="6" color= "#2E0854">For unisex names</hl></font><br>
+		<button style= "background-color:#D7CAEE;color:#320E3B;border-radius:30px;border-color:#230C33; width:150px; height:40px;" onclick="window.location.href = 'uninames.html';"> <font size="4" face="Commando" >Click Here</button></font>
+		<br>
+
+			<!--yeehawbreaks-->
+		</style>
+		</div>
+		<br>
+		</style>
+		<div align="center">
+			<section style="width:25%; float:right; display:inline-block; border-radius:10px;margin-right:5%; margin-bottom:5%;border-width:3px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+		<hl><font size="6" color= "#2E0854">For male names</hl></font>
+		<br>
+		<button style= "background-color:#D7CAEE;color:#320E3B;border-radius:30px;border-color:#230C33; width:150px; height:40px;" onclick="window.location.href = 'malename.html';"> <font size="4" face="Commando" >Click Here</button></font>
+		<br>
+
+			<!--yeehawbreaks-->
+
+		</style>
+		</div>
+		<br>
+		</style>
+		<div align="center">
+			<section style="width:25%; float:right; display:inline-block; border-radius:10px;margin-right:5%;margin-bottom:5%; border-width:3px; border-style:solid; border-color:#6EA4BF;background-color:#ECFEE8; padding: 5px">
+		<hl><font size="6" color= "#2E0854">For female names</hl></font>
+		<br>
+		<button style= "background-color:#D7CAEE;color:#320E3B;border-radius:30px;border-color:#230C33; width:150px; height:40px;" onclick="window.location.href = 'femname.html';"> <font size="4" face="Commando" >Click Here</button></font>
+		<br>
+</section>
+
+	<!--yeehawbreaks-->
+
+
+
+</section>
+
+
+<br>
+<body>
+	<script>
+		var gender = [
+		'Male',
+		'Female',
+		'Male',
+		'Female',
+		'Female',
+		'Female',
+		'Female',
+		'Female',
+		'Female',
+		'Female',
+		'Female',
+		'Male',
+		'Female',
+		'Male',
+		'Female',
+		'Male',
+		'Female',
+		'Male',
+		'Female',
+		'Agender',
+		'Gender Fluid',
+		'Bigender',
+	]
+
+		function newgender() {
+	var randomNumber = Math.floor(Math.random() * (gender.length));
+	document.getElementById('genderDisplay') .innerHTML = gender[randomNumber];
+}
+	</script>
+</body>
+
+<!--NEW-->
+<body>
+	<script>
+		var nation = [
+		'American',
+		'English',
+		'German',
+		'Russian',
+		'Japanese',
+		'Korean',
+		'Indian',
+		'Native American',
+		'French',
+		'Mexican',
+		'Arabian',
+		'African',
+		'Italian',
+		'Vietnamese',
+		'Chinese',
+		'Hawaiian',
+		'Thai',
+
+	]
+
+		function newnation() {
+	var randomNumber = Math.floor(Math.random() * (nation.length));
+	document.getElementById('nationDisplay') .innerHTML = nation[randomNumber];
+}
+	</script>
+</body>
+
+<!--NEW-->
+
+<body>
+	<script>
+		var skc = [
+		'Type 1: Light to Pale White',
+		'Type 2: White to Fair',
+		'Type 3: White to Olive',
+		'Type 1: Light to Pale White',
+		'Type 2: White to Fair',
+		'Type 3: White to Olive',
+		'Type 4: Olive to Moderate Brown',
+		'Type 5: Brown to Dark Brown',
+		'Type 2: White to Fair',
+		'Type 3: White to Olive',
+		'Type 1: Light to Pale White',
+		'Type 2: White to Fair',
+		'Type 3: White to Olive',
+		'Type 4: Olive to Moderate Brown',
+		'Type 5: Brown to Dark Brown',
+		'Type 6: Very Dark Brown to Black',
+	]
+
+		function newskc() {
+	var randomNumber = Math.floor(Math.random() * (skc.length));
+	document.getElementById('skcDisplay') .innerHTML = skc[randomNumber];
+}
+	</script>
+</body>
+
+<!--NEW-->
+
+<body>
+	<script>
+		var height = [
+		'Below 4 &#39;10"',
+		'Between 4 &#39;11" and 5 &#39;',
+		'Between 5 &#39; 1" and 5 &#39; 5"',
+		'Between 5 &#39; 6" and 6 &#39;',
+		'Between 6 &#39; 1" and 6 &#39; 5"',
+		'Between 5 &#39; 1" and 5 &#39; 5"',
+		'Between 5 &#39; 6" and 6 &#39;',
+		'Between 6 &#39; 1" and 6 &#39; 5"',
+		'Between 5 &#39; 1" and 5 &#39; 5"',
+		'Between 5 &#39; 6" and 6 &#39;',
+		'Between 6 &#39; 1" and 6 &#39; 5"',
+		'Between 5 &#39; 1" and 5 &#39; 5"',
+		'Between 5 &#39; 6" and 6 &#39;',
+		'Between 6 &#39; 1" and 6 &#39; 5"',
+		'Between 6 &#39; 6" and 7 &#39;',
+		'Between 4 &#39;11" and 5 &#39;',
+		'Between 5 &#39; 1" and 5 &#39; 5"',
+		'Between 5 &#39; 6" and 6 &#39;',
+		'Between 6 &#39; 1" and 6 &#39; 5"',
+		'Between 6 &#39; 6" and 7 &#39;',
+		'Between 4 &#39;11" and 5 &#39;',
+		'Between 5 &#39; 1" and 5 &#39; 5"',
+		'Between 5 &#39; 6" and 6 &#39;',
+		'Between 6 &#39; 1" and 6 &#39; 5"',
+		'Between 6 &#39; 6" and 7 &#39;',
+		'Over 7 &#39;',
+	]
+
+		function newheight() {
+	var randomNumber = Math.floor(Math.random() * (height.length));
+	document.getElementById('heightDisplay') .innerHTML = height[randomNumber];
+}
+	</script>
+</body>
+
+<!--NEW-->
+
+<body>
+	<script>
+		var build = [
+		'Ectomorph, severely underweight',
+		'Mesomorph, severely underweight',
+		'Endomorph, severely underweight',
+		'Ectomorph, underweight',
+		'Mesomorph, underweight',
+		'Endomorph, underweight',
+		'Ectomorph, average weight',
+		'Mesomorph, average weight',
+		'Endomorph, average weight',
+		'Ectomorph, overweight',
+		'Mesomorph,overweight',
+		'Endomorph, overweight',
+		'Ectomorph, severely overweight',
+		'Mesomorph, severely overweight',
+		'Endomorph, severely overweight',
+	]
+
+		function newbuild() {
+	var randomNumber = Math.floor(Math.random() * (build.length));
+	document.getElementById('buildDisplay') .innerHTML = build[randomNumber];
+}
+	</script>
+</body>
+<body>
+	<script>
+		var hleg = [
+		'bald',
+		'Short: above ears',
+		'Short: to chin',
+		'Short: to shoulders',
+		'Medium: past shoulders',
+		'Medium: to upper back',
+		'Long: to small of back',
+		'Long: to middle of back',
+		'Long: Below hips',
+		'Extreme: To knees',
+		'Extreme: To calves',
+		'Extreme: To floor',
+		'Extreme: longer than floor',
+	]
+
+		function newhleg() {
+	var randomNumber = Math.floor(Math.random() * (hleg.length));
+	document.getElementById('hlegDisplay') .innerHTML = hleg[randomNumber];
+}
+	</script>
+</body>
+
+<!--NEW-->
+
+<body>
+	<script>
+		var htex = [
+		'Wavy: Dense',
+		'Wavy: Fine',
+		'Wavy: Average',
+		'Wavy: Fluffy',
+		'Wavy: Light',
+		'Wavy: Limp',
+		'Wavy: Shaggy',
+		'Wavy: Silky',
+		'Wavy: Poufy',
+		'Wavy: Wispy',
+		'Wavy: Soft',
+		'Wavy: Dry',
+		'Wavy: Dull',
+		'Wavy: Knotted',
+		'Wavy: Messy',
+		'Wavy: Bouncy',
+		'Wavy: Flared',
+		'Wavy: Full',
+	'Kinky: Dense',
+		'Kinky: Fine',
+		'Kinky: Average',
+		'Kinky: Fluffy',
+		'Kinky: Light',
+		'Kinky: Limp',
+		'Kinky: Shaggy',
+		'Kinky: Silky',
+		'Kinky: Poufy',
+		'Kinky: Wispy',
+		'Kinky: Soft',
+		'Kinky: Dry',
+		'Kinky: Dull',
+		'Kinky: Knotted',
+		'Kinky: Messy',
+		'Kinky: Bouncy',
+		'Kinky: Flared',
+		'Kinky: Full',
+		'Curly: Dense',
+		'Curly: Fine',
+		'Curly: Average',
+		'Curly: Fluffy',
+		'Curly: Light',
+		'Curly: Limp',
+		'Curly: Shaggy',
+		'Curly: Silky',
+		'Curly: Poufy',
+		'Curly: Wispy',
+		'Curly: Soft',
+		'Curly: Dry',
+		'Curly: Dull',
+		'Curly: Knotted',
+		'Curly: Messy',
+		'Curly: Bouncy',
+		'Curly: Flared',
+		'Curly: Full',
+		'Straight: Dense',
+		'Straight: Fine',
+		'Straight: Average',
+		'Straight: Fluffy',
+		'Straight: Light',
+		'Straight: Limp',
+		'Straight: Shaggy',
+		'Straight: Silky',
+		'Straight: Poufy',
+		'Straight: Wispy',
+		'Straight: Soft',
+		'Straight: Dry',
+		'Straight: Dull',
+		'Straight: Knotted',
+		'Straight: Messy',
+		'Straight: Bouncy',
+		'Straight: Flared',
+		'Straight: Full',
+	]
+
+		function newhtex() {
+	var randomNumber = Math.floor(Math.random() * (htex.length));
+	document.getElementById('htexDisplay') .innerHTML = htex[randomNumber];
+}
+	</script>
+</body>
+
+
+<!--NEW-->
+
+<body>
+	<script>
+		var hcol = [
+		'Dyed Red',
+		'Dyed Orange',
+		'Dyed Blonde','Dyed Brown',
+		'Dyed Dark Brown',
+		'Dyed Yellow',
+		'Dyed Green',
+		'Dyed Blue',
+		'Dyed Teal',
+		'Dyed Purple',
+		'Dyed Pink',
+		'Amber',
+		'Auburn',
+		'Crimson',
+		'Copper',
+		'Maroon',
+		'Wine',
+		'Bronze',
+		'Dirty Blonde',
+		'Honey Blonde',
+		'Gold',
+		'Tawny',
+		'Sandy',
+		'Alabaster',
+		'Ashen',
+		'Frosted',
+		'Pearl',
+		'Salt and Pepper',
+		'Ash Brown',
+		'Brunette',
+		'Deep Brown',
+		'Ebony',
+		'Honey',
+		'Inky',
+		'Slate',
+		'Umber',
+		'Raven',
+		'Strawberry',
+		'Ombre'
+	]
+
+		function newhcol() {
+	var randomNumber = Math.floor(Math.random() * (hcol.length));
+	document.getElementById('hcolDisplay') .innerHTML = hcol[randomNumber];
+}
+	</script>
+</body>
+
+
+<!--NEW-->
+
+<body>
+	<script>
+		var eyecol = [
+		'Hazel',
+		'Grey',
+		'Black',
+		'Light Brown',
+		'Dark Brown',
+		'Light Blue',
+		'Light Green',
+		'Blue',
+		'Green',
+		'Dark Blue',
+		'Dark Green',
+		'Red',
+		'Pink',
+		'Purple',
+		'Yellow',
+		'Gold',
+		'Orange',
+		'Teal',
+		'Blind'
+	]
+
+		function neweyecol() {
+	var randomNumber = Math.floor(Math.random() * (eyecol.length));
+	document.getElementById('eyecolDisplay') .innerHTML = eyecol[randomNumber];
+}
+	</script>
+</body>
+
+<!--NEW-->
+
+<body>
+	<script>
+		var sign = [
+		'Aries',
+		'Taurus',
+		'Gemini',
+		'Cancer',
+		'Leo',
+		'Scorpio',
+		'Capricorn',
+		'Virgo',
+		'Libra',
+		'Saggitarius',
+		'Aquarius',
+		'Pisces',
+	]
+
+		function newsign() {
+	var randomNumber = Math.floor(Math.random() * (sign.length));
+	document.getElementById('signDisplay') .innerHTML = sign[randomNumber];
+}
+	</script>
+</body>
+
+
+<!--NEW-->
+
+<body>
+	<script>
+		var pers = [
+		'Humble',
+		'Brave',
+		'Courageous',
+		'Serious',
+		'Resourceful',
+		'Stubborn',
+		'Loyal',
+		'Gullible',
+		'Selfish',
+		'Generous',
+		'Self-Confident',
+		'Respectful',
+		'Considerate',
+		'Imaginative',
+		'Brilliant',
+		'Creative',
+		'Independant',
+		'Carefree',
+		'Studious',
+		'Intelligent',
+		'Honest',
+		'Mischievous',
+		'Adventurous',
+		'Hardworking',
+		'Daring',
+		'Charming',
+		'Lazy',
+		'Patriotic',
+		'Successful',
+		'Responsible',
+		'Cautious',
+		'Helpful',
+		'Polite',
+		'Leader',
+		'Conceited',
+		'Bossy',
+		'Demanding',
+		'Ambitious',
+		'Quiet',
+		'Curious',
+		'Mature',
+		'Witty',
+		'DETERMINED',
+		'Energwetic',
+		'Calm',
+		'Gentle',
+		'Loving',
+		'Proud',
+		'Mysterious',
+		'Eager',
+		'Hopeful',
+		'Lucky',
+		'Cooperative',
+		'Mannerly',
+		'Rude',
+		'Strict',
+		'Annoyed',
+		'Foolish',
+		'Grumpy',
+		'Miserable',
+		'Talented',
+		'Sly',
+		'Skillful',
+		'Rich',
+		'Thoughtful',
+		'Tolerant',
+		'Trustworthy',
+		'Weak',
+		'Wise',
+		'Jealous',
+		'Lonely',
+		'Faithful',
+		'Timid',
+		'Shy',
+		'Outgoing',
+		'Naive',
+		'Strong',
+		'Poor',
+		'Slow',
+	]
+
+		function newpers() {
+	var randomNumber = Math.floor(Math.random() * (pers.length));
+	document.getElementById('persDisplay') .innerHTML = pers[randomNumber];
+}
+	</script>
+</body>
+
+
+<!--NEW-->
+
+<body>
+	<script>
+		var power = [
+		'Aerokinesis',
+		'Aeroportation',
+		'Air Mimicry',
+		'Atmokinesis-weather',
+		'Deoxygenation',
+		'Lung Adaptation-breathe anywhere',
+		'Wind Generation',
+		'Air Generation',
+		'Aeromancy',
+		'Nubikinesis-clouds',
+		'Flight',
+		'Levitation',
+		'Geokinesis',
+		'Earth Mimicry',
+		'Agrokinesis-plants',
+		'Ferrokinesis',
+		'Crystallokinesis',
+		'Golem Creation',
+		'Granulation',
+		'Geomancy',
+		'Halokinesis-salt',
+		'Hyalokinesis-glass',
+		'Koniokinesis-dust',
+		'Plassikinesis-plastic',
+		'Psammokinesis-sand',
+		'Terrakinesis',
+		'Terraportation',
+		'Pyrokinesis',
+		'Heliokinesis-sun',
+		'Fire Mimicry',
+		'Fire Breathing',
+		'Hell-Fire Manipulation',
+		'Holy-Fire Manipulation',
+		'Melting',
+		'Inflammation',
+		'Pyrotechnics',
+		'Self-Detonation',
+		'Thermokinesis',
+		'Pyroportation',
+		'Needle shooting',
+		'Overhaul-Type-Abilities',
+		'Amalgamation',
+		'Duplication',
+		'Grow Limbs',
+		'Vampire',
+		'Poison',
+		'Acid',
+		'Ink',
+		'Ash',
+		'Bubbles',
+		'Fog',
+		'Goo',
+		'Smoke',
+		'Gas',
+		'Miasma',
+		'Oil',
+		'Echolocation',
+		'Sonic sound',
+		'Enhanced Gravity',
+		'Environmental Adaptation',
+		'Vaccuum Creation',
+		'Seija-Topsy Turvy',
+		'Animal Communication',
+		'plant communication',
+		'Hydrokinesis',
+		'Dehydration',
+		'Water Mimicry',
+		'Umbrakinesis',
+		'Night Vision',
+		'Camouflage',
+		'Animated Shadow',
+		'Life breath',
+		'Healing',
+		'Electrokinesis',
+		'Energy Blast',
+		'Photon Burst',
+		'Trauma/Nightmare',
+		'Sonokinesis-sound',
+		'Quintessence Force-soul/heart',
+		'Chronokinesis-time',
+		'spatiokinesis-space',
+		'Cosmokinesis-cosmic',
+		'Cryokinesis',
+		'icebreathing',
+		'invisibility',
+		'exorcism',
+		'speed',
+		'lasers',
+		'mind reading',
+		'picture teleportation',
+		'space travel',
+		'hair',
+		'music',
+		'present mic',
+		'Nagito',
+		'sauce manipulation',
+		'blood manipulation',
+		'future manipulation',
+		'flying but only north',
+		'glow in the dark blood',
+		'sticky fingers',
+		'border manipulation',
+		'smelling delicious',
+		'bakugo',
+		'super strength',
+		'box power',
+		'cars that only turn right',
+		'spin',
+		'bullet fingers',
+		'necromancy',
+		'dentistry',
+		'enhanced senses',
+		'bleed gasoline',
+		'fingernail growth',
+		'dimension hopping',
+		'mochi',
+		'rope control',
+		'mind reading but kinks',
+		'talking to rats',
+		'dinosaur',
+		'god',
+		'long arms',
+		'tech',
+		'big brain',
+		'biggest dick energy',
+		'caffeine',
+		'cocaine',
+		'drug aura',
+		'all for one',
+		'aging power',
+		'ultimate priest',
+		'tree',
+		'imortality',
+		'karma',
+		'sans',
+		'asriel',
+		'jumping',
+		'kirishima',
+		'glue',
+		'alchemy',
+		'absorbancy',
+		'bone flexibility',
+		'bone crackling',
+		'rubber',
+		'aphrodesiac',
+		'cupid',
+		'wool',
+		'not feeling pain',
+		'gluttony',
+		'goat',
+		'seducing women',
+		'can count to infinity',
+		'jaywalking',
+		'not get caught',
+		'lying',
+		'memory absorbtion',
+		'poison sweat',
+		'thot controling',
+		'doll controlling',
+		'alice touhou',
+		'nuclear powers',
+		'bee friends',
+		'sword heaven',
+		'destruction of everything',
+		'subconcious manipulation',
+		'multiple eyes',
+		'dream manipulation',
+		'veganism',
+		'mushroom',
+		'healing',
+		'cyclops',
+		'fly above reality',
+		'super sword',
+		'perfect yodel',
+		'insanity moon powers',
+		'spinning hat',
+		'thot',
+		'gills',
+		'vore',
+		'mermaid',
+		'soul removal',
+		'the ability to catch anyone',
+		'perfect accent',
+		'always have the right ,money',
+		'time rewind',
+		'cooking food well',
+		'gas tank',
+		'magical girl transformation',
+		'wax manip',
+		'food manip',
+		'shapeshifting',
+		'ikea',
+		'cars2',
+		'flowers',
+		'time stop',
+		'time speed',
+		'photokinesis',
+		'Forcefields',
+		'Clairvoyance',
+		'teleportation',
+		'telepathy',
+		'empathy',
+		'hypnosis',
+		'mind control',
+		'Astral Imprisonment',
+		'Possession',
+		'Dream manipulation',
+		'Animation',
+		'paralysis',
+	]
+
+		function newpower() {
+	var randomNumber = Math.floor(Math.random() * (power.length));
+	document.getElementById('powerDisplay') .innerHTML = power[randomNumber];
+}
+	</script>
+</body>
+</div>
+</html>
+
+

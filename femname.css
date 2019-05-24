@@ -53,10 +53,12 @@ html {
       color: ;
   }
 
+ group{}
   section {
       width: 73%;
-      padding: 15px;
       float:center;
+      /* float: left; */
+      /* background-image: url("KOGalaxy.jpg"); */
   }
   p{
       float:center;
